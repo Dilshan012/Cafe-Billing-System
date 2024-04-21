@@ -359,6 +359,7 @@
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(36, 31);
             this.closeButton.TabIndex = 24;
+            this.closeButton.Text = "X";
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
@@ -373,6 +374,7 @@
             this.maximizeButton.Name = "maximizeButton";
             this.maximizeButton.Size = new System.Drawing.Size(36, 31);
             this.maximizeButton.TabIndex = 25;
+            this.maximizeButton.Text = "[]";
             this.maximizeButton.UseVisualStyleBackColor = false;
             this.maximizeButton.Click += new System.EventHandler(this.maximizeButton_Click);
             // 
@@ -387,6 +389,7 @@
             this.minimizeButton.Name = "minimizeButton";
             this.minimizeButton.Size = new System.Drawing.Size(36, 31);
             this.minimizeButton.TabIndex = 26;
+            this.minimizeButton.Text = "---";
             this.minimizeButton.UseVisualStyleBackColor = false;
             this.minimizeButton.Click += new System.EventHandler(this.minimizeButton_Click);
             // 

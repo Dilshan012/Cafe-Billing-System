@@ -176,9 +176,52 @@ namespace Question03
 
         }
 
+        private bool isMaximized = false;
+        private Point restoreLocation;
+        private Size restoreSize;
+
         private void maximizeButton_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Maximized;
+            if (!isMaximized)
+            {
+                // Save the current location and size
+                restoreLocation = this.Location;
+                restoreSize = this.Size;
+
+                // Maximize the form
+                this.WindowState = FormWindowState.Maximized;
+                isMaximized = true;
+            }
+            else
+            {
+                // Restore the form to its previous location and size
+                this.WindowState = FormWindowState.Normal;
+                this.Location = restoreLocation;
+                this.Size = restoreSize;
+                isMaximized = false;
+            }
+        }
+
+        // Handle form movement
+        private Point lastLocation;
+
+        protected override void OnMouseDown(MouseEventArgs e)
+        {
+            base.OnMouseDown(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                lastLocation = e.Location;
+            }
+        }
+
+        protected override void OnMouseMove(MouseEventArgs e)
+        {
+            base.OnMouseMove(e);
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastLocation.X;
+                this.Top += e.Y - lastLocation.Y;
+            }
         }
 
         private void minimizeButton_Click(object sender, EventArgs e)

@@ -327,12 +327,12 @@
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Elephant", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label8.Location = new System.Drawing.Point(282, 43);
+            this.label8.Location = new System.Drawing.Point(311, 57);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(496, 51);
+            this.label8.Size = new System.Drawing.Size(430, 51);
             this.label8.TabIndex = 20;
-            this.label8.Text = "Caffe Besh Bill System";
+            this.label8.Text = "Cafe Billing System";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label9
